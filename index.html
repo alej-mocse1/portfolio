@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="icon" href="./img/logo.png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -28,7 +29,7 @@
 
 
     <main class="main">
-      <div class="info-content">
+      <div class="info-content" data-aos="fade-right" data-aos-duration="1700">
         <h1>I'm <span>alejandro </span>mocse </h1>
         <p>soy un desarrollador web Full Stack, especializado en el desarrollo de interfaces de usuario y
           experiencias de usuario en general. con capacidad para trabajar en equipo y aportar soluciones a problemas que se presenten.</p>
@@ -36,7 +37,9 @@
          <button class="download-cv">download CV</button>
        </a>
       </div>
-      <img src="./img/Alejandro.jpg" alt="alejandro mocse picture" class="img-main">
+      <img src="./img/Alejandro.jpg" alt="alejandro mocse picture" class="img-main" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
     </main>
   </div>
 
@@ -44,8 +47,8 @@
   <div class="about">
   
     <img src="./img/imagenes.jpeg" alt="about-imagen">
-    <div class="about-info">
-      
+
+    <div class="about-info" data-aos="fade-left" data-aos-duration="2000" >  
       <h2>About me</h2>
       <div class="divider"></div>
       <p>cuento con excelentes habilidades técnicas, resolución de problemas, trabajo en equipo para crear sitios y aplicaciones web modernas y escalables y una gran predisposición para seguir mejorando mi código en general y adquirir buenas practicas de programación.</p> 
@@ -57,7 +60,7 @@
   <a name="portfolio"></a>
 
   <div class="portfolio">
-    <div class="porfolio-headings">
+    <div class="porfolio-headings" data-aos="fade-left" data-aos-duration="2000">
       <h2>portfolio</h2>
       <div class="divider"></div>
       
@@ -107,7 +110,7 @@
 
   <a name="contacto"></a>
   <div class="container-contact-padre">
-    <div class="contact-headings">
+    <div class="contact-headings" data-aos="fade-left" data-aos-duration="2000">
       <h2>Contacto</h2>
       <div class="divider"></div>
     </div>
@@ -133,12 +136,14 @@
 
 
   <div class="footer">
-   <div class="footer-content">
+   <div class="footer-content" data-aos="fade-down"
+   data-aos-easing="linear"
+   data-aos-duration="1200">
      <h2>alejandro mocse</h2>
      <div class="divider"></div>
      <h3>full Stack developer</h3>
    </div>
-    <div class="social-network">
+    <div class="social-network"  >
       <a href="https://www.instagram.com/alejandro.mocse/"> 
        <img src="data:image/png;base64,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" alt="img-instagram">
       </a> 
@@ -156,6 +161,9 @@
       </a>
   </div>
   </div>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
