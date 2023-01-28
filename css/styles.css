@@ -35,7 +35,6 @@ body {
   display: flex;
   width: 50%;
   justify-content: space-around;
-
 }
 .menu .active{
   color: aqua;
@@ -57,6 +56,13 @@ color: #191c32 ;
 transition: ease-in .8s;
 }
 
+.menu-toggle,
+.info-content__subtitle{
+  display: none;
+}
+
+
+
 .main{
   margin: 0 auto;
   width: 80vw;
@@ -67,7 +73,7 @@ transition: ease-in .8s;
 }
 
 h1{
-  font-size: 2.5em;
+  font-size: clamp(4vw, 1.5em, 3em);
 }
 
 span{
@@ -150,10 +156,10 @@ font-size: 3em;
 
 .portfolio .container{
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 
@@ -324,3 +330,115 @@ cursor: pointer;
   cursor: pointer;
   transition: 1s;
 }
+
+ 
+
+
+/* //////////////////// diseño responsive ////////////////////// */
+
+@media screen and (max-width: 800px) {
+
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #2b3058;
+    z-index: 1;
+    transform: translateX(-110%);
+    transition: all 1.2s ease-in-out;
+  }
+
+  .show-menu {
+    transform: translateX(0%);
+    transition: all 1.2s ease-in-out;
+  }
+
+  .menu li {
+    margin: 2em;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .fa-bars {
+    font-size: 1.5em;
+    margin-top: -.2em;
+    cursor: pointer;
+  }
+
+  .menu-toggle .fa-close {
+    font-size: 1.7em;
+    display: none;
+  }
+  
+.main , .about{
+  display: flex;
+  flex-direction: column-reverse;
+  }
+
+.info-content__p{
+  display: none;
+}
+
+
+.img-main{
+width: min(70% ,400px);
+height: 470px;
+margin-bottom: 20px;
+}
+
+.info-content__subtitle{
+  display: block;
+  margin-bottom: 3em;
+}
+
+.divider2{
+  display: none;
+}
+
+.img-contact{
+  display: none;
+}
+ .portfolio .container .card{
+ margin-bottom: 6em;
+}
+
+.contact-form{
+  width: 200wv;
+  }
+
+  .container-contact{
+display: flex;
+text-align: center;
+margin-left: -2vw;
+  }
+
+  .container-contact  .contact-form{
+     width: 90%;
+     margin: 0 auto;
+      }
+
+  .form-moblie{
+    min-width: 86vw;
+    margin: 0 auto;
+  }
+
+  .btn-submit{
+    min-width: 86vw;
+    margin: 0 auto;
+  }
+
+  .social-network{
+    margin-top: 5vh;
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+

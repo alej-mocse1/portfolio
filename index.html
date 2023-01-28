@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="icon" href="./img/logo.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 </head>
 <body>
 
@@ -18,20 +19,25 @@
         <div class="brand">
           <h2>A<span>M</span></h2>
         </div>
-        <ul class="menu">
+        <ul class="menu" id="menu">
           <li ><a class="active" href="#">home</a></li>
           <li><a href="#about">about me</a></li>
           <li><a href="#portfolio">portfolio</a></li>
           <li><a href="#contacto">contacto</a></li>
         </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars" id="toggle-open"></i>
+          <i class="fas fa-close" id="toggle-close"></i>
+        </div>
       </nav>
     </header>
 
 
     <main class="main">
       <div class="info-content" data-aos="fade-right" data-aos-duration="1700">
+        <span class="info-content__subtitle">Full stack developer</span>
         <h1>I'm <span>alejandro </span>mocse </h1>
-        <p>soy un desarrollador web Full Stack, especializado en el desarrollo de interfaces de usuario y
+        <p  class="info-content__p">soy un desarrollador web Full Stack, especializado en el desarrollo de interfaces de usuario y
           experiencias de usuario en general. con capacidad para trabajar en equipo y aportar soluciones a problemas que se presenten.</p>
         <a download="cv-fullStack" href="./img/CVfullStack.pdf">
          <button class="download-cv">download CV</button>
@@ -105,7 +111,7 @@
  
     </div>
 
-    <div class="divider2"></div>
+
   </div>
 
   <a name="contacto"></a>
@@ -123,9 +129,9 @@
     <div class="contact-form">
       <h4>deja un mensaje ...</h4>
       <form class="form" name="formulario-contacto" netlify>
-        <input type="text" placeholder="name" name="nombre" id="nombre">
-        <input type="email" placeholder="email" name="email" id="email">
-        <textarea name="msj-client" placeholder="ingrese su mensaje" id="" cols="30" rows="10"></textarea>
+        <input type="text" placeholder="name" name="nombre" id="nombre" class="form-moblie">
+        <input type="email" placeholder="email" name="email" id="email"  class="form-moblie">
+        <textarea name="msj-client" placeholder="ingrese su mensaje" id="" cols="30" rows="10"  class="form-moblie"></textarea>
         <button type="submit" class="btn-submit" value="enviar">enviar mensaje</button>
       </form>
      
@@ -161,6 +167,7 @@
       </a>
   </div>
   </div>
+  <script src="js/scripts.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
