@@ -349,6 +349,7 @@ cursor: pointer;
     z-index: 1;
     transform: translateX(-110%);
     transition: all 1.2s ease-in-out;
+
   }
 
   .show-menu {
@@ -373,6 +374,13 @@ cursor: pointer;
   .menu-toggle .fa-close {
     font-size: 1.7em;
     display: none;
+
+  }
+  
+  .about img{
+    width: 100%;
+    height: 380px;
+
   }
   
 .main , .about{
@@ -382,22 +390,26 @@ cursor: pointer;
 
 .info-content__p{
   display: none;
+
 }
 
 
 .img-main{
-width: min(70% ,400px);
-height: 470px;
-margin-bottom: 20px;
+  width: 290px;
+  height: 330px;
+  border: 4px solid aqua;
+  margin-left:20px;
 }
 
 .info-content__subtitle{
   display: block;
   margin-bottom: 3em;
+ 
 }
 
 .divider2{
   display: none;
+ 
 }
 
 .img-contact{
@@ -409,12 +421,13 @@ margin-bottom: 20px;
 
 .contact-form{
   width: 200wv;
-  }
+}
 
   .container-contact{
 display: flex;
 text-align: center;
 margin-left: -2vw;
+
   }
 
   .container-contact  .contact-form{
