@@ -1,0 +1,137 @@
+
+
+.logosdivArriba{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.divider3{
+  height: 7px;
+  width: 410px;
+  background-color: aqua;
+  margin-top: 10px;
+  margin-bottom: 2.5em;
+  border-radius:20px ;
+}
+
+.logosdiv1{
+
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logosdiv1 .slide{
+  display: flex;
+  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  margin: 24px;
+}
+
+.logosdiv1 .slide{
+  width: 120px;
+  height: 120px;
+}
+
+
+.logosdiv1 img{
+    width: 120px;
+    height: 120px;
+  }
+
+
+.JS{
+  width: 110px !important;
+}
+
+.ts{
+  width: 200px !important;
+  position: relative;
+  right: 25px;
+}
+
+.node{
+  width: 130px !important;
+  height: 100px !important;
+  position: relative;
+  right: 10px;
+  top: 20px;
+}
+
+
+.postgres{
+  width: 200px !important;
+  position: relative;
+  right: 40px;
+
+}
+
+
+.esxp{
+width: 160px !important;
+position: relative;
+right: 20px;
+}
+  @keyframes scroll {
+    0% {
+        -webkit-transform: translateX(calc(-60px * 23));
+        transform: translateX(calc(-60px * 23));
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 850px) {
+
+  .logosdiv1{
+
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  .logosdiv1 img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .logosdivArriba{
+    width: 95vw;
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+
+
+  .logosdivArriba{
+    right: 40px;
+  }
+
+  .node{
+
+    top: 0px;
+  }
+  
+  .divider3{
+    height: 7px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-bottom: 2.5em;
+  }
+  
+}

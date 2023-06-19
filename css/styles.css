@@ -80,6 +80,12 @@ span{
   color: aqua;
 }
 
+.typed{
+  font-size: clamp(3vw, 1em, 2em);
+  color: aqua;
+  font-weight: 550;
+}
+
 .download-cv{
   padding: 10px 20px;
   background-color: aqua;
@@ -91,9 +97,9 @@ span{
 }
 
 .download-cv:hover{
-  padding: 10px 23px;
   box-shadow: none;
   transition: 1s;
+  background-color: rgb(30, 126, 126);
 }
 
 .img-main{
@@ -128,8 +134,14 @@ span{
   font-size: 1.5em;
   color:  #191c32 ;
   margin-bottom: 1em;
+  font-weight: 500;
 }
 
+.pStack{
+  color: black !important;
+  font-weight: 500 !important;
+  font-size: 25px !important;
+}
 
 .divider{
   height: 4px;
@@ -141,6 +153,7 @@ span{
 
 .portfolio{
   width: 100vw;
+  height: 1050px;
   background-color: #191c32 ;
   color: #fff;
 }
@@ -162,20 +175,23 @@ font-size: 3em;
   flex-wrap: wrap;
 }
 
-
+.info-content__p{
+  margin-top: 15px;
+}
 .card{
   width: 300px;
   height: 300px;
   border: 1px solid white;
   color: white;
   margin: 1em;
+  z-index: 1;
 }
 
 
 .card-img{
 width: 100%;
 height: 150px;
-background-image: url('../img/pi.jpg');
+background-image: url('../img/Proyment.png');
 background-size: cover;
 }
 .card-img2{
@@ -184,8 +200,19 @@ background-size: cover;
   background-image: url('../img/supraSports.png');
   background-size: cover;
   }
+.card-img3{
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/porfolio.png');
+    background-size: cover;
+    }
 
-
+.card-img4{
+      width: 100%;
+      height: 150px;
+      background-image: url('../img/molipromo.png');
+      background-size: cover;
+      }
 .card-title{
   padding: 20px;
 }
@@ -200,12 +227,14 @@ background-size: cover;
 .projects-details{
   width: 70%;
   margin: 0 auto;
+  z-index: 200;
 
 }
 .projects-details:hover{
-  width: 75%;
-  margin: 0 auto;
+  /* width: 75%;
+  margin: 0 auto; */
  transition: 1s;
+ background-color: rgb(30, 126, 126);
 }
 
 .projects-details a{
@@ -213,6 +242,11 @@ text-decoration: none;
 text-transform: uppercase;
 }
 
+.Stack-Tecnologies{
+    width: 100vw;
+    background-color: #191c32 ;
+    color: #fff;
+}
 
 .container-contact-padre{
 background-color: #191c32;
@@ -287,15 +321,6 @@ cursor: pointer;
 }
   
 
-.divider2{
-  border: 4px solid white;
-  width: 90%;
-  margin-left: 4%;
-  position: relative;
-  border-radius: 5px;
-  top: -55px;
-}
-
 
 .footer{
   display: flex;
@@ -352,6 +377,9 @@ cursor: pointer;
 
   }
 
+  .portfolio{
+    height:  auto
+  }
   .show-menu {
     transform: translateX(0%);
     transition: all 1.2s ease-in-out;
@@ -361,6 +389,10 @@ cursor: pointer;
     margin: 2em;
   }
 
+  .download-cv{
+    position: relative;
+    right: 10px;
+  }
   .menu-toggle {
     display: block;
   }
@@ -452,6 +484,10 @@ margin-left: -2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .typed{
+    display: none;
   }
 }
 
